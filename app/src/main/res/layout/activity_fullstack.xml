@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RouteApp.FullstackActivity"
+    android:background="@drawable/route_bg">
+    <ImageView
+        android:id="@+id/fullStack"
+        android:src="@drawable/route_fullstack"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        app:layout_constraintHeight_percent=".25"
+        android:layout_marginTop="12dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fullStack"
+    >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:text="•HTML\n
+                    •HTML 5\n
+                    •CSS\n
+                    •CSS3\n
+                    •SASS\n
+                    •Bootstrap 4\n
+                    •JavaScript\n
+                    •Regular expressions\n
+                    •ECMAScript 6\n
+                    •JQuery\n
+                    •angular 7\n
+                    •fabric.js\n
+                    •AJAX\n
+                    •JSON\n
+                    •Hosting and domains\n
+                    •Freelancing tips and tricks\n
+                    •PHP\n
+                    •MYSQL\n
+                    •MYSQL advanced queries and triggers\n
+                    •OOP\n
+                    •Design Patterns\n
+                    •MVC\n
+                    •laravel\n
+                    •build Api , Api authentication\n
+                    •connect wordpress with laravel\n
+                    •build wordpress web service\n
+                    •agile\n
+                    •Scrum\n
+                    •Software development process" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

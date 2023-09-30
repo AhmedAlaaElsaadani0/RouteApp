@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RouteApp.IOSActivity"
+    android:background="@drawable/route_bg">
+    <ImageView
+        android:id="@+id/ios"
+        android:src="@drawable/route_ios"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        app:layout_constraintHeight_percent=".25"
+        android:layout_marginTop="12dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ios">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:text="Content IOS  >>>>>\n\n
+OOP refreshment\n
+• Introduction\n
+\ta. Installing OS X virtual machine\n
+\tb. Installing Xcode and the iOS SDK\n
+\tc. A guided tour of Xcode\n
+\td. An Introduction to Xcode playgrounds\n
+• Swift Programming Language\n
+\ta. Swift Data Types, Constants, and Variables\n
+\tb. Swift Operators and Expressions\n
+\tc. Swift Flow Control\n
+\td. The Swift Switch Statement\n
+\te. An Overview of Swift Functions\n
+\tf. The Basics of Object Oriented Programming in Swift\n
+\tg. An Introduction to Swift Subclassing and Extensions\n
+\th. Working with Array and Dictionary Collections in Swift\n
+\ti. Understanding Error Handling in Swift\n
+• Views, Layouts, and Storyboards.\n
+\ta. Learning different types of Xcode projects\n
+\tb. Creating first application\n
+\tc. Introduction to application file structure.\n
+\td. Using Storyboards in Xcode\n
+\te. Introduction to basic UI Components.\n
+\tf. Creating basic UI Components using Storyboard\n
+\tg. Creating basic UI Components programmatically\n
+\th. Customizing UI Components.\n
+\ti. An Introduction to Auto Layout in iOS\n
+\tj. Working with iOS Auto Layout Constraints in Interface Builder\n
+\tk. Creating Navigation controller and learning its flow\n
+\tl. Creating tab-based application\n
+\tm. Adding custom fonts\n
+\tn. Creating table view \n
+\to. Example about gestures\n
+\tp. Creating custom cells for tables\n
+\tq. Animations  \n
+\tr. Examples about subclass\n
+• Working with local data\n
+\ta. Working with UserDefaults\n
+\tb. Introduction to CoreData\n
+\tc. Introduction to Realm\n
+\td. Creating data models\n
+\te. Saving retrieving data\n
+• ToDo app project\n
+\ta. Implement the interface\n
+\tb. Create realm models\n
+\tc. restore ToDo lists\n
+• CocoaPods\n
+\ta. Introduction to Cocoapods\n
+\tb. Installing sample pods\n
+\tc. Learning how to use pods in project\n
+\td. How to look for a useful pod\n
+\te. Example using Realm database thirdparty\n
+• Networking\n
+\ta. Working with Alamofire pod\n
+\tb. Installing and configuring Alamofire\n
+\tc. Learning how to send GET \n
+\td. Learning how to parse JSON responses using ObjectMapper pod\n
+\te. Creating sample login screen with POST \n
+\tf. Creating sample table view displays data from JSON object\n
+• Dynamic animator\n
+\ta. Deal with physics engine\n
+\tb. Apply Gravity field to dynamic objects\n
+\tc. Apply collision field to dynamic objects\n
+\td. Apply other physics fields to dynamic objects\n
+• Working with Maps\n
+\ta. Introduction to maps\n
+\tb. Showing current user location\n
+\tc. Adding pins\n
+• Apply some design patterns\n
+\ta. Creational: Singleton.\n
+\tb. Structural: MVC, Decorator, Adapter, Facade.\n
+\tc. Behavioral: Observer\n
+• Creating final project depends on attendees needs" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

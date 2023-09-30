@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LoginFacebook</string>
+    <string name="input_username">اسم المستخدم</string>
+    <string name="input_password">كلمة المرور</string>
+    <string name="button_login">تسجيل الدخول</string>
+    <string name="main_header">مرحبا بك فى الفيسبوك</string>
+</resources>

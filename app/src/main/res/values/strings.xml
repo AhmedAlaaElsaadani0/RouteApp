@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Route Applications</string>
+    <string name="main_header">Welcome To Facebook</string>
+    <string name="input_username">User Name</string>
+    <string name="input_password">Password</string>
+    <string name="button_login">Log In</string>
+    <string name="home">Home</string>
+    <string name="posts">Posts</string>
+    <string name="videos">Videos</string>
+    <string name="photos">Photos</string>
+    <string name="community">Community</string>
+    <string name="search">Search</string>
+    <string name="mockup">Mockup</string>
+    <string name="fonts">Fonts</string>
+    <string name="templates">Templates</string>
+    <string name="colors">Colors</string>
+    <string name="facebook_mobile_post_mochup_psd">Facebook MObile Post Mochup (PSD)</string>
+    <string name="fiadhsoidhufgsdhagoiafhoigfhfuaohgojabviubgavaviugavpiadshuodgfousdahfoiuadgho_dgahosahoaidshdaosughdasgouhgaouhgadsoiuagdshuogdahogadhoadsighoifgdajsagdihaidgiagdshoiadgs">fiadhsoidhufgsdhagoiafhoigfhfuaohgojabviubgavaviugavpiadshuodgfousdahfoiuadgho[dgahosahoaidshdaosughdasgouhgaouhgadsoiuagdshuogdahogadhoadsighoifgdajsagdihaidgiagdshoiadgs</string>
+    <string name="sign_up_for_facebook">Sign Up For Facebook</string>
+    <string name="help_center">Help Center</string>
+    <string name="player_one_name">Player one Name</string>
+    <string name="player_two_name">Player two Name</string>
+    <string name="start_game">Start Game</string>
+</resources>

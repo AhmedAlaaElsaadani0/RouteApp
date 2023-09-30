@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RouteApp.AndroidActivity"
+    android:background="@drawable/route_bg">
+        <ImageView
+            android:id="@+id/android"
+            android:src="@drawable/route_android"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            app:layout_constraintHeight_percent=".25"
+            android:layout_marginTop="12dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/android">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:text="Part 1 (Java SE)\n
+\t1. Introduction to Java Programming\n
+\t\t• Overview.\n
+\t\t• Compiler and JVM\n
+\t\t• Project Structure\n
+\t\t• Hello World Application\n
+\t\t• Variables and Data types\n
+\t\t• Operators\n
+\t\t• Conditional statements (IF - Switch)\n
+\t\t• Loops (For - While - Do While)\n
+\t2. Basics\n
+\t\t• nested loops\n
+\t\t• Strings\n
+\t\t• Arrays\n
+\t\t• functions\n
+\t3. Object Oriented Programming\n
+\t\t• Classes and Objects\n
+\t\t• Encapsulation and data hiding\n
+\t\t• Inheritance\n
+\t\t• Polymorphism\n
+\t\t• Abstraction (Abstract classes - Interfaces)\n
+\t4. Collections and Generics\n
+\t\t• Sets, Lists\n
+\t\t• Threading\n
+\t\t• Generics Class and Method\n
+Part 2 (Android Development)\n
+\t1. Introduction to Android\n
+\t\t• Android OS\n
+\t\t• Android Versions\n
+\t\t• OS Architecture\n
+\t\t• Application Component\n
+\t\t• Android Studio and Gradle\n
+\t\t• Creating Hello World\n
+\t2. UI Components\n
+\t\t• Layouts(Constraints Layout- Linear Layout )\n
+\t\t• Using resources ( drawables, Strings colors, and Styles )\n
+\t3. UI Components II\n
+\t\t• Menu\n
+\t\t• Support Localization\n
+\t\t• Support Orientation\n
+\t4. Intents and Activities\n
+\t\t• Intents\n
+\t\t• Intent Filters\n
+\t5. Fragments\n
+\t\t• what is fragments\n
+\t\t• Fragment manager and transaction\n
+\t\t• tablayout, NavigationDrawer, BottomNavigation\n
+\t6. Dialogs\n
+\t\t• Alert Dialog\n
+\t\t• Display dialog with items\n
+\t\t• Custom dialogs (Dialog Fragment)\n
+\t7. Data Storage\n
+\t\t• Shared Preference\n
+\t\t• Room (Database Library) - from google Arch Components\n
+\t8. Threading and Services\n
+\t\t• Threading\n
+\t\t• Service and Intent Service\n
+\t9. Web services and APIs\n
+\t\t• what is JSON ?\n
+\t\t• how to make network calls and APIs\n
+\t\t• Consuming Web APIs\n
+\t\t• Using Retrofit and Gson Libraries\n
+\t\t• how to cache Apis\n
+\t\t• using Room and Retrofit Together\n
+\t\t• what is Repository Pattern?\n
+\t10. FireBase RealTime Database\n
+\t\t• how to deal with Realtime Database\n
+\t11. Notifications\n
+\t\t• Simple Notification\n
+\t\t• firebase to push Notifications\n
+\t\t• one signal push notifications SDK" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

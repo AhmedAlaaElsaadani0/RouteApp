@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rooView"
+    tools:context=".XOGame.XOGame">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/PLayerOneName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player one (x)"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toTopOf="@+id/PLayerOneScore"
+            app:layout_constraintEnd_toStartOf="@+id/PLayerTwoName"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/PLayerOneScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score : 0"
+            android:textSize="28sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/PLayerOneName"
+            app:layout_constraintStart_toStartOf="@id/PLayerOneName"
+            app:layout_constraintTop_toBottomOf="@+id/PLayerOneName" />
+
+        <TextView
+            android:id="@+id/PLayerTwoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Two (O)"
+            android:textSize="28sp"
+
+            app:layout_constraintBottom_toTopOf="@+id/PLayerTwoScore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/PLayerOneName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/PLayerTwoScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score : 0"
+            android:textSize="28sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/PLayerTwoName"
+            app:layout_constraintStart_toStartOf="@+id/PLayerTwoName"
+            app:layout_constraintTop_toBottomOf="@+id/PLayerTwoName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainHeader">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:onClick="onPlayerClick"
+            android:textSize="32sp"
+            app:cornerRadius="4dp"
+            android:tag="0"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:onClick="onPlayerClick"
+            android:textSize="32sp"
+            android:tag="1"
+            app:cornerRadius="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:onClick="onPlayerClick"
+            android:tag="2"
+            android:textSize="32sp"
+            app:cornerRadius="4dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/Second_row"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_row">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:onClick="onPlayerClick"
+            android:textSize="32sp"
+            android:tag="3"
+            app:cornerRadius="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:onClick="onPlayerClick"
+            android:tag="4"
+            android:textSize="32sp"
+            app:cornerRadius="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:onClick="onPlayerClick"
+            android:textSize="32sp"
+            android:tag="5"
+            app:cornerRadius="4dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/third_row"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Second_row">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:tag="6"
+            android:onClick="onPlayerClick"
+            android:textSize="32sp"
+
+            app:cornerRadius="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:tag="7"
+            android:onClick="onPlayerClick"
+            android:textSize="32sp"
+            app:cornerRadius="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:tag="8"
+            android:onClick="onPlayerClick"
+            android:textSize="32sp"
+            app:cornerRadius="4dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

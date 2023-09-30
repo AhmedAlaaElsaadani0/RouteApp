@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:background="@drawable/route_bg"
+    tools:context=".RouteApp.RouteAppMainAc">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Route Courses Content "
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+    <ImageView
+        android:id="@+id/fullStack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/route_fullstack"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="10dp"
+        />
+    <ImageView
+        android:id="@+id/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/route_android"
+        android:scaleType="centerInside"/>
+    <ImageView
+        android:id="@+id/ios"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/route_ios"
+        android:scaleType="centerInside"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

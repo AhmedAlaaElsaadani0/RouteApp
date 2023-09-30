@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    android:padding="20dp"
+    tools:context=".LoginActivity"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/main_header"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/input_box_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_box_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:autofillHints="emailAddress"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="6dp"
+        android:hint="@string/input_username"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/input_box_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_box_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:autofillHints="password"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="6dp"
+        android:hint="@string/input_password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/SecColor"
+        android:text="@string/button_login"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/input_box_password"
+        app:layout_constraintStart_toStartOf="@+id/input_box_password"
+
+        app:layout_constraintTop_toBottomOf="@+id/input_box_password"
+
+        />
+
+    <TextView
+        android:id="@+id/label_textHelpCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#00000000"
+        android:text="@string/help_center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input_box_password"
+        app:layout_constraintStart_toStartOf="@+id/input_box_password"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/SecColor"
+        android:text="@string/sign_up_for_facebook"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/label_textHelpCenter"
+        app:layout_constraintEnd_toEndOf="@+id/input_box_password"
+
+        app:layout_constraintStart_toStartOf="@+id/input_box_password"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
